@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio button start-->
+             <input type="radio" name="radio-button" id="radio1">
+             <input type="radio" name="radio-button" id="radio2">
+             <input type="radio" name="radio-button" id="radio3">
+            <!--radio button end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="images/c-d-x-PDX_a_82obo-unsplash.jpg" alt="headphones picture">
+            </div>
+            <div class="slide">
+                <img src="images/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="microphone picture">
+            </div>
+            <div class="slide">
+                <img src="images/Superman-Wallpaper-For-Computer.jpg" alt="picture of superman">
+            </div>
+            <div class="slide">
+                <img src="images/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="pic of a laptop">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked =true;
+            counter++;
+            if(counter > 4){
+                counter =1;
+            }
+        },5000);
+    </script>
+</body>
+</html>

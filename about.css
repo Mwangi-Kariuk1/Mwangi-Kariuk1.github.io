@@ -1,0 +1,80 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/ray-mallick-5J1bHRX1fNw-unsplash.jpg);
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(125, 125, 138, 0.459);
+}
+nav{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.479);
+    height: 60px;
+}
+nav ul li{
+    display: inline-block;
+    float: flex;
+    padding: 5px 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 50px;
+    text-shadow: 100px;
+}
+main{
+    background-color: rgba(180, 167, 167, 0.329);
+    width: 100%;
+    height: 500px;
+    text-decoration: none;
+}
+h2{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 50px;
+    font-size: 18px;
+    padding: 20px 20px 0;
+}
+h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 800px;
+    text-shadow: 500px;
+    padding: 15px 15px 0;
+    
+}
+h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-size: 17px;
+    font-weight: 800px;
+    text-shadow: 500px;
+}
+footer{
+    width: calc(100%-80px);
+    padding: 4px 4px;
+    background-color: rgb(7, 80, 0);
+    margin-top: 10px;
+    height: 120px;
+}
+footer ul{
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+     
+}
+footer ul li{
+    display: block;
+    list-style: none;
+    color: white;
+}
+footer ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 25px  ;
+}

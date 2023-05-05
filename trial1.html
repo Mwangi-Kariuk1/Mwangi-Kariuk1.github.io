@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #character {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animated Character Game</h1>
+    <p>Use the left and right arrow keys to move the character:</p>
+    <div id="character">f</div>
+    <script>
+      var character = document.getElementById("character");
+      var characterX = 0;
+      var characterSpeed = 5;
+
+      document.onkeydown = function(event) {
+        switch (event.keyCode) {
+          case 37: // left arrow
+            characterX -= characterSpeed;
+            break;
+          case 39: // right arrow
+            characterX += characterSpeed;
+            break;
+        }
+        character.style.left = characterX + "px";
+      };
+    </script>
+  </body>
+</html>
